@@ -71,11 +71,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 350px;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 0 15px;
+  padding: 0 25px;
   background: #040b14;
   overflow-y: auto;
 }
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .nav-menu * {
@@ -153,45 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-}
-.nav-menu ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.nav-menu ul li {
-    margin: 0;
-    display: inline-block;
-    list-style-type: none;
-    transition: all 0.2s;
-}
-
-.nav-menu > ul > li > a {
-    color: #aaa;
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 2em;
-    text-decoration: none;
-
-}
-
-.nav-menu li > ul{
-    display : none;
-    margin-top:1px;
-    background-color: #bbb;
-
-}
-
-.nav-menu li > ul li{
-    display: block;
-}
-
-.nav-menu  li > ul li a {
-    color: #111;
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 2em;
-    text-decoration: none;
 }
 
 .nav-menu a {
@@ -324,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 40px 40px;
+  padding: 40px 80px;
   overflow: hidden;
 }
 
@@ -824,96 +785,23 @@ section {
 /*--------------------------------------------------------------
 # Contact Form
 --------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
 
-.contact .info {
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .info i {
-  font-size: 20px;
-  color: #149ddd;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #dff3fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #050d18;
-}
-
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #173b6c;
-}
-
-.contact .info .email p {
-  padding-top: 5px;
-}
-
-.contact .info .social-links {
-  padding-left: 60px;
-}
-
-.contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-
-.contact .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-}
-
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
-}
-
-.responsive-form-container {
-  position: relative;
+.iframe-container {
   overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 177%;
+  padding-bottom: 300%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -931,6 +819,7 @@ section {
     transform: rotate(360deg);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
