@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /research/kshitij-research.html
+Allow: /teaching/kshitij-teaching.html
+Disallow: /forms/
+Disallow: /portfolio/
+Disallow: /publications/
+Disallow: /assets/
+Disallow: /pages/thankyou.html
