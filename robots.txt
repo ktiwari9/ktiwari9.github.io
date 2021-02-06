@@ -5,4 +5,4 @@ Allow: /portfolio/
 Disallow: /forms/
 Disallow: /publications/
 Disallow: /assets/
-Disallow: /pages/thankyou.html
+Sitemap: https://ktiwari9.github.io/sitemap.xml
